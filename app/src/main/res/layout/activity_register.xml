@@ -38,19 +38,102 @@
     <EditText
         android:id="@+id/fullname"
         android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="60dp"
         android:ems="10"
         android:hint="Full Name"
         android:inputType="textPersonName"
         android:padding="10dp"
         android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textview2"
+
+        />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="60dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textSize="20dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fullname"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="60dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textSize="20dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
         />
 
 
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="32dp"
+        android:text="Register"
+        android:textSize="20dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password"
+
+
+        />
+
+    <TextView
+        android:id="@+id/signin"
+        android:layout_marginBottom="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Already have an account "
+        android:textSize="17dp"
+        android:textColor="#ffbf00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/register"
+        />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:id="@+id/pregressbar"
+        style="?android:attr/progressBarStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signin"
+        app:flow_verticalBias="0.26"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
